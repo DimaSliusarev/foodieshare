@@ -23,7 +23,7 @@
     {% comment %} <p id="like-count-{{ post.id }}">{{ post.likes.count }} Likes</p> {% endcomment %}
     {% comment %} <p class="post-likes"><strong>Likes:</strong></p><p id="like-count-{{ post.id }}">{{ post.likes.count }}</p> {% endcomment %}
 
-    <button class="like-btn" data-post-id="{{ post.id }}" data-ajax-url="{% url 'foodieshare:toggle_like' post.id %}">
+    <button class="like-btn" data-post-id="{{ post.id }}" data-ajax-url="{% url 'foodieshare:toggle_like' post.id %}" style="background-color: red; color: white;">
         {% if user_like %}
         Unlike
         {% else %}
@@ -41,7 +41,7 @@
             <form method="post">
                 {% csrf_token %}
                 {{ comment_form.as_p }}
-                <button type="submit">Submit Comment</button>
+                <button type="submit" style="background-color: blue; color: white;">Submit Comment</button>
             </form>
         </div>
         

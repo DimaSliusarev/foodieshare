@@ -20,7 +20,7 @@
     <form method="post" action="{% url 'foodieshare:register' %} " enctype="multipart/form-data">
         {% csrf_token %}
         {{ form.as_p }}
-        <button type="submit">Register</button>
+        <button type="submit" style="background-color:green; color: white;">Register</button>
     </form>
     </form>
 </div>

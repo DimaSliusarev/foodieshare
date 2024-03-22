@@ -25,7 +25,7 @@
     <form method="post" enctype="multipart/form-data" class="post-form">
         {% csrf_token %}
         {{ post_form.as_p }}
-        <button type="submit" name="form_type" value="post_form">Submit Post</button>
+        <button type="submit" name="form_type" value="post_form" style="background-color: blue; color: white;">Submit Post</button>
     </form>
 </div>
 {% endblock %}
